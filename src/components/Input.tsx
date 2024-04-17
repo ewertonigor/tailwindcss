@@ -3,7 +3,7 @@ import { ComponentProps } from 'react'
 interface InputPrefixProps extends ComponentProps<'div'> {}
 
 export function InputPrefix(props: InputPrefixProps) {
-  return <div {...props} />
+  return <div className="flex-shrink" {...props} />
 }
 
 interface InputControlProps extends ComponentProps<'input'> {}
@@ -11,7 +11,7 @@ interface InputControlProps extends ComponentProps<'input'> {}
 export function InputControl(props: InputControlProps) {
   return (
     <input
-      className="mx-1 flex-1 border-0 bg-transparent p-0 text-zinc-900 placeholder-zinc-600"
+      className="flex-1 border-0 bg-transparent p-0 text-zinc-900 placeholder-zinc-600"
       {...props}
     />
   )
