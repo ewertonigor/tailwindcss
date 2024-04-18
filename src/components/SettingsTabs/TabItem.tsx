@@ -15,9 +15,11 @@ export default function TabItem({
   return (
     <TabsTrigger
       value={value}
-      className="data-[state=active]: relative px-1 pb-4 text-sm text-zinc-500 hover:text-violet-700"
+      className="data-[state=active]: group relative px-1 pb-4 text-sm text-zinc-500 outline-none hover:text-violet-700"
     >
-      <span>{title}</span>
+      <span className="group-focus-visible::ring-2 group-focus-visible::ring-offset-4 rounded group-focus:ring-violet-400">
+        {title}
+      </span>
 
       {isSelected && (
         <motion.div
