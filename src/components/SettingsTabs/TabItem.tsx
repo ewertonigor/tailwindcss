@@ -17,7 +17,7 @@ export default function TabItem({
       value={value}
       className="data-[state=active]: group relative px-1 pb-4 text-sm text-zinc-500 outline-none hover:text-violet-700"
     >
-      <span className="group-focus-visible::ring-2 group-focus-visible::ring-offset-4 rounded group-focus:ring-violet-400">
+      <span className="group-focus-visible::ring-2 group-focus-visible::ring-offset-4 whitespace-nowrap rounded group-focus:ring-violet-400">
         {title}
       </span>
 
